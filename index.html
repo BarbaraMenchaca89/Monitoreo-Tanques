@@ -1,0 +1,35 @@
+<!--Menu-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Monitoreo de Tanques</h1>
+        <p class="empresa">Acuatica del Golfo S.A.</p>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Buscador</h2>
+            <p>Ingrese el codigo del tanque a monitorear.</p>
+        </section>
+
+        <div class="search-box">
+            <input type="text" id="buscarTanque" placeholder="Codigo del tanque">
+            <button id="btnBuscar" class="btn">Buscar</button>
+        </div>
+
+        <div id="resultadoBusqueda"></div>
+       
+        <button id="btnRegistro" class="btn">Registrar</button>
+        <button id="btnEstatus" class="btn">Estatus</button>
+
+        <script src="app.js"></script>
+    </main>
+</body>
+</html>

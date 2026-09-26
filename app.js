@@ -76,4 +76,26 @@ function crearGrafica(idCanvas, etiqueta, valores) {
 }
 
 
+/*Funcion para buscar tanque y redirigir a monitoreo.html con el id del tanque*/
+document.addEventListener("DOMContentLoaded", () => {
+  const btnBuscar = document.getElementById("btnBuscar");
+  const inputBuscar = document.getElementById("buscarTanque");
+  const resultado = document.getElementById("resultadoBusqueda");
 
+  if (btnBuscar) {
+    btnBuscar.addEventListener("click", () => {
+      const codigo = inputBuscar.value.trim();
+      if (codigo) {
+        // Simulacion - usar fetch a la API en produccion
+        resultado.innerHTML = `
+          <p>Tanque encontrado: ${codigo}</p>
+          <button class="btn-monitor" onclick="window.location.href='monitoreo.html?id=${codigo}'">
+            Monitorear
+          </button>
+        `;
+      } else {
+        resultado.innerHTML = "<p>Ingrese un código válido.</p>";
+      }
+    });
+  }
+});
