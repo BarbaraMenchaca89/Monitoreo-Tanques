@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <header>
+            <h1>Monitoreo de Tanques</h1>
+            <p class="empresa">Acuatica del Golfo S.A.</p>
+        </header>
+        <main>
+            <h2>Dashboard</h2>
+            <button id="btnMenu" class="btn">Menu</button>
+
+            <table class="dashboard">
+                <tr>
+                    <th>Tanque #</th>
+                    <th>Estatus</th>
+                    <th>Accion</th>
+                </tr>
+                <!--Filas de informacion ficticia, cambiar luego-->
+                <tr>
+                    <td>Tanque #1</td>
+                    <td><span class="alerta">⚠️</span></td>
+                    <td><button class="btn-monitor">Monitorear</button></td>
+                </tr>
+                <tr>
+                    <td>Tanque #3</td>
+                    <td><span class="ok">✅</span></td>
+                    <td><button class="btn-monitor">Monitorear</button></td>
+                </tr>
+            </table>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>

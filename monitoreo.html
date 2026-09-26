@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitoreo de tanques</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Monitoreo de tanques</h1>
+    <p class="empresa">Acuática del Golfo S.A.</p>
+  </header>
+
+  <main>
+    <div class="tanque-info">
+      <label for="tanque">Tanque #0003</label>
+      <button id="btnMenu" class="btn">Menu</button>
+    </div>
+
+    <section class="graficas">
+      <div class="grafica">
+        <h3>Nivel de temperatura</h3>
+        <p id="tempActual" class="valor">-- °C</p>
+        <canvas id="grafTemp"></canvas>
+      </div>
+
+      <div class="grafica">
+        <h3>Nivel de pH</h3>
+        <p id="phActual" class="valor">-- pH</p>
+        <canvas id="grafPh"></canvas>
+      </div>
+
+      <div class="grafica">
+        <h3>Salinidad</h3>
+        <p id="salActual" class="valor">-- ppt</p>
+        <canvas id="grafSal"></canvas>
+      </div>
+
+      <div class="grafica">
+        <h3>Oxígeno disuelto</h3>
+        <p id="oxiActual" class="valor">-- mg/L</p>
+        <canvas id="grafOxi"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
